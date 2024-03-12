@@ -1,0 +1,23 @@
+game.html
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Idle page game
+        </title>
+    </head>
+    <body>
+        <h1>
+            You have wasted <span id="spendtime">0</span> seconds of your life here!
+        </h1>
+        <script>
+            let spendtime = 0;
+            function loop() {
+                spendtime++;
+                document.getElementById("spendtime").innerHTML = spendtime;
+            }
+            setInterval(loop, 1000);
+        </script>
+    </body>
+</html>
